@@ -1,16 +1,25 @@
-# flutter_application_1
+# Real_Mqtt
 
-A new Flutter project.
+This is an android app with mqtt capabilities.
 
-## Getting Started
+## Getting Started:
+  When the application starts, enter the following values:
+  - Alias: whatever you want the server to be called
+  - Server: test.mosquitto.org
+  - UniqueID: a large random string
+  - Port: 1883
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Add a device:
+  When connected you can add a device with the '+' Button. The attributes are:
+  - Name: Whatever you want it to ba called
+  - Type: Whatever you want the type to be
+  - Add action: You can add separate action by completing for each one the following values
+    - Name: The name of the action
+    - Topic: The topin in witch the value value will be published
+    - Value: The value to be sent
+ 
+## Sent the commands:
+  When in the davice page, you will see all the actions you bound with the device as buttons. Press to send the value specified.
+  
+## Misc:
+  Good debugging tool: https://mqttx.app/
